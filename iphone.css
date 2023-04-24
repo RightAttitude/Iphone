@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1f1c1c;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.info {
+    max-width: 220px;
+    font-size: 12px;
+    margin-left: 80px;
+    margin-top: -100px;
+    transform: scale(0);
+    transition: .5s ease-in-out;
+}
+.info h1, h3 {
+    margin-bottom: 20px;
+    color: #ffe16a;
+}
+
+.info p {
+    color: rgb(170, 163, 163);
+    text-transform: capitalize;
+}
+
+.iphone {
+    display: flex;
+    justify-content: center;
+    width: 290px;
+    height: 576px;
+    border: 2px solid #b6a2a2;
+    border-radius: 30px;
+}
+
+.iphone .screen {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    width: 280px;
+    height: 568px;
+    border-radius: 30px;
+    background: url(media/iphone.jpg);
+    /*background: #b36c02de;*/
+    background-size: cover;
+}
+
+.smallscreen {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    height: 24px;
+    width: 78px;
+    border-radius: 10px;
+    margin-top: 6px;
+    transition: all 0.6s ease;
+}
+
+.smallscreen .profile {
+    margin-left: 4px;
+    margin-top: 5px;
+    width: 32px;
+    height: 32px;
+    background: url(media/Profile-Icon.png);
+    background-size: cover;
+    border-radius: 50px;
+    transform: scale(0);
+    transition: all 0.5s ease-out;
+    background-color: rgb(10, 119, 221);
+}
+
+.smallscreen .receive {
+    margin-left: 10px;
+    margin-top: 6px;
+    width: 32px;
+    height: 32px;
+    background: url(media/call-on.png);
+    background-size: cover;
+    border-radius: 50px;
+    transform: scale(0);
+    transition: all 0.5s ease-out;
+}
+
+.end {
+    margin-left: 90px;
+    margin-top: 5.5px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    background: url(media/call-end.png);
+    background-size: cover;
+    transform: scale(0);
+}
+
+.main:hover .info {
+    transform: scale(1);
+}
+
+.smallscreen:hover {
+    height: 44px;
+    width: 220px;
+    border-radius: 50px;
+}
+
+.smallscreen:hover .profile {
+    transform: scale(1);
+}
+
+.smallscreen:hover .receive {
+    transform: scale(1);
+}
+
+.smallscreen:hover .end {
+    transform: scale(1);
+}
